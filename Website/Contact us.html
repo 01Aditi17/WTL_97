@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - Admission Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #ffe6f0;
+    }
+
+    nav {
+      background-color: #ffe6f0;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      color: #004080;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #004080;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      margin-top: 30px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #004080;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #cc00a7;
+    }
+
+    .contact-info {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .signature {
+      text-align: center;
+      color: #004080;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">AdmissionPortal</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="streams.html">Streams</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="apply.html">Apply Now</a></li>
+    </ul>
+  </nav>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="Aditi Devidas Nimase" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <input type="submit" value="Send Message">
+  </form>
+
+  <div class="contact-info">
+    <h2>Admission Portal Contact Information</h2>
+    <p><strong>Address:</strong><br>
+    Admission Office,<br>
+    Sanjivani College Campus,<br>
+    Kopargaon, Ahmednagar, Maharashtra - 423601</p>
+
+    <p><strong>Email:</strong><br>
+    admissionportal@sanjivani.edu.in</p>
+
+    <p><strong>Phone:</strong><br>
+    +91 97645 12345</p>
+  </div>
+
+  <div class="signature">Submitted by: Aditi Devidas Nimase</div>
+</body>
+</html>

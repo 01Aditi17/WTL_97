@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admission Portal - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #ffe6f0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      transition: 0.3s;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #000;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    li a:hover {
+      background-color: #fdd3e7;
+    }
+
+    
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #ffe6f0;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+
+      #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+      }
+    }
+
+    main {
+      text-align: center;
+      padding: 40px 20px;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #222;
+    }
+
+    p {
+      font-size: 16px;
+      color: #444;
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
+
+    footer {
+      background-color: #ffe6f0;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Admission Portal</div>
+
+    
+    <input type="checkbox" id="menu-toggle" />
+
+    
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="apply.html">Apply Now</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 style="">Welcome to the Admission Portal</h1>
+    <p>This portal helps you understand eligibility, know about different streams, and learn how to apply easily.</p>
+
+    <div class="images">
+      <img src="img3.jpeg" alt="Image 1" />
+      <img src="img2.jpeg" alt="Image 2" />
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Admission Portal | Designed by Aditi Nimase 
+  </footer>
+
+</body>
+</html>
